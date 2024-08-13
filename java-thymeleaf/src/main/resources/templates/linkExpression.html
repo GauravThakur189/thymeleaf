@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Link Expression</title>
+</head>
+<body>
+ <h1>Link Expression in thymeleaf</h1>
+<a th:href="@{/user}">user details</a>
+<a th:href="@{/gaurav}"> gaurav</a> <br/>
+<a th:href="@{/link/{id}(id=${id})}"> link with parameter</a>
+</body>
+</html>

@@ -15,4 +15,10 @@ public class UserController {
         model.addAttribute("user",user);
         return "userData";
     }
+
+    @GetMapping("/link")
+    public String linkExpression(Model model){
+        model.addAttribute("id",1);
+        return "linkExpression";
+    }
 }
